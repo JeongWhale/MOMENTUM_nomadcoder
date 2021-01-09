@@ -1,0 +1,38 @@
+.question {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.question__input {
+  height: auto;
+  line-height: normal;
+  outline: none;
+  background: none;
+  width: 560px;
+  padding: 10px 20px;
+  color: #c8d6e5;
+  font-size: 30px;
+  border-color: none;
+  border: 1px solid #c8d6e5;
+}
+
+.question__input::placeholder {
+  text-align: center;
+  color: #c8d6e5;
+}
+
+#confirm__title {
+  font-size: 50px;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    display: none;
+  }
+}

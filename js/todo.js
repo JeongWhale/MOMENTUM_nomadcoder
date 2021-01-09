@@ -14,8 +14,8 @@ function deleteToDo(event){
     toDoList.removeChild(li);
     const cleanToDos = toDos.filter(function(toDo){
         return toDo.id !== parseInt(li.id);
-    })
-    toDos = cleanToDos
+    });
+    toDos = cleanToDos;
     saveToDos();
 }
 
@@ -31,10 +31,10 @@ function paintToDo(text){
     const newId = toDos.length+1;
     delBtn.innerHTML = "❌";
     delBtn.addEventListener("click", deleteToDo);
-    span.innerText=text;
     toDoList.appendChild(li);
     li.appendChild(delBtn);
     li.appendChild(span);
+    span.innerText=text;
     li.id=newId;
     const toDoObj={
         text:text,

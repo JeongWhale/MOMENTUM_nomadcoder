@@ -1,0 +1,21 @@
+.form {
+  display: none;
+}
+
+.form__nameBox {
+  outline: none;
+  white-space: nowrap;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  background: 0;
+  margin-bottom: 20px;
+  font-size: 100px;
+}
+
+.form input::placeholder {
+  color: whitesmoke;
+}
+
+.form1 input::placeholder {
+  color: whitesmoke;
+}
